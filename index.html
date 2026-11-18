@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historias Scouts de Honduras - 105 Años de Aventura, Servicio y Memoria</title>
+    <meta name="description" content="Portal histórico e interactivo de las Historias Scouts de Honduras. Preservando más de un siglo de memoria, campamentos, servicio y hermandad desde 1921.">
+    <meta name="theme-color" content="#1e0d32">
+
+    <!-- Favicon con el medallón scout -->
+    <link rel="icon" type="image/jpeg" href="images/medalla-scout-oro.jpg">
+
+    <!-- Google Fonts: Plus Jakarta Sans (Moderno estilo Prixima) & Playfair Display (Elegancia Histórica) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- RemixIcon (Librería de iconos moderna usada en Prixima) -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="inicio">
+
+    <!-- =========================================================================
+         TOP BAR DE CONTACTO & SOCIAL (ESTILO PRIXIMA)
+         ========================================================================= -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <span class="top-bar-item d-none d-sm-inline-flex">
+                        <i class="ri-mail-fill"></i>
+                        <a href="mailto:historiascouthn@gmail.com">historiascouthn@gmail.com</a>
+                    </span>
+                    <span class="top-bar-item d-none d-lg-inline-flex">
+                        <i class="ri-map-pin-2-fill"></i>
+                        <span>Tegucigalpa & Cobertura Nacional, Honduras</span>
+                    </span>
+                    <span class="top-bar-item d-none d-xl-inline-flex">
+                        <i class="ri-fire-fill"></i>
+                        <span class="text-warning fw-bold">105 Años de Escultismo</span>
+                    </span>
+                </div>
+                <div class="top-bar-socials d-flex align-items-center ms-auto ms-sm-0">
+                    <span class="top-bar-social-label text-warning fw-bold me-2"><i class="ri-share-forward-fill"></i> Síguenos:</span>
+                    <a href="https://www.facebook.com/HistoriasScoutHonduras" target="_blank" rel="noopener noreferrer" class="social-link facebook" title="Facebook"><i class="ri-facebook-fill"></i></a>
+                    <a href="https://www.instagram.com/historiascouthn/" target="_blank" rel="noopener noreferrer" class="social-link instagram" title="Instagram"><i class="ri-instagram-line"></i></a>
+                    <a href="https://www.youtube.com/@historiasScoutdeHonduras" target="_blank" rel="noopener noreferrer" class="social-link youtube" title="YouTube"><i class="ri-youtube-fill"></i></a>
+                    <a href="https://www.pinterest.com/historiascouthn/" target="_blank" rel="noopener noreferrer" class="social-link pinterest" title="Pinterest"><i class="ri-pinterest-fill"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================================================================
+         NAVBAR PRINCIPAL (PRIXIMA STICKY GLASSMORPHISM)
+         ========================================================================= -->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-scout">
+        <div class="container">
+            <!-- Brand Logo con Medallón Dorado -->
+            <a class="brand-wrapper" href="#inicio">
+                <img src="images/medalla-scout-oro.jpg" alt="Medallón Historias Scouts de Honduras" class="brand-logo-img">
+                <div class="brand-text-wrap">
+                    <span class="brand-title">HISTORIAS SCOUTS</span>
+                    <span class="brand-subtitle">DE HONDURAS</span>
+                </div>
+            </a>
+
+            <!-- Botón Hamburguesa Responsive -->
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScoutMenu" aria-controls="navbarScoutMenu" aria-expanded="false" aria-label="Abrir navegación">
+                <i class="ri-menu-4-line fs-2 text-dark"></i>
+            </button>
+
+            <!-- Menú de Enlaces -->
+            <div class="collapse navbar-collapse" id="navbarScoutMenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">El Proyecto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#accion">En Acción</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#linea-tiempo">Cronología</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#videos">Voces</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Memorias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#eventos">Eventos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a href="https://forms.gle/eAm35mK9SWiV7BKs5" target="_blank" rel="noopener noreferrer" class="btn-prixima-gold">
+                            <i class="ri-quill-pen-line"></i> Comparte tu Historia ↗
+                        </a>
+                    </li>
+                    <li class="nav-item d-lg-none mt-3 pt-3 border-top text-center">
+                        <span class="d-block small text-muted mb-2 fw-bold text-uppercase" style="letter-spacing: 0.1em;"><i class="ri-share-forward-fill text-warning"></i> Síguenos</span>
+                        <div class="d-flex justify-content-center gap-2">
+                            <a href="https://www.facebook.com/HistoriasScoutHonduras" target="_blank" rel="noopener noreferrer" class="social-link facebook" title="Facebook"><i class="ri-facebook-fill"></i></a>
+                            <a href="https://www.instagram.com/historiascouthn/" target="_blank" rel="noopener noreferrer" class="social-link instagram" title="Instagram"><i class="ri-instagram-line"></i></a>
+                            <a href="https://www.youtube.com/@historiasScoutdeHonduras" target="_blank" rel="noopener noreferrer" class="social-link youtube" title="YouTube"><i class="ri-youtube-fill"></i></a>
+                            <a href="https://www.pinterest.com/historiascouthn/" target="_blank" rel="noopener noreferrer" class="social-link pinterest" title="Pinterest"><i class="ri-pinterest-fill"></i></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- =========================================================================
+         HERO CAROUSEL SLIDER (ESTILO PRIXIMA FULLSCREEN)
+         ========================================================================= -->
+    <header class="hero-slider-section">
+        <div id="priximaHeroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6500">
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#priximaHeroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Hito 1"></button>
+                <button type="button" data-bs-target="#priximaHeroCarousel" data-bs-slide-to="1" aria-label="Hito 2"></button>
+                <button type="button" data-bs-target="#priximaHeroCarousel" data-bs-slide-to="2" aria-label="Hito 3"></button>
+                <button type="button" data-bs-target="#priximaHeroCarousel" data-bs-slide-to="3" aria-label="Hito 4"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <!-- Slide 1: Scout en la Montaña (Tu Próxima Aventura Comienza Aquí) -->
+                <div class="carousel-item active" style="background-image: url('images/carousel-slide1.jpg');">
+                    <div class="carousel-caption">
+                        <div class="hero-badge-tag">
+                            <i class="ri-compass-3-line"></i> Conéctate, Explora y Comparte
+                        </div>
+                        <h1 class="hero-title">
+                            Tu Próxima Aventura<br>
+                            <span class="highlight-gold">Comienza Aquí.</span>
+                        </h1>
+                        <p class="hero-desc">
+                            Recuerdos, rostros y promesas que encendieron la llama scout en Honduras desde 1921. El archivo digital que preserva nuestra identidad para siempre.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="#sobre" class="btn-prixima-gold">
+                                <i class="ri-compass-discover-line"></i> Conocer el Proyecto
+                            </a>
+                            <a href="#videos" class="btn-prixima-outline-white">
+                                <i class="ri-play-circle-line"></i> Ver Relatos de Fogata
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Cuadro de Memoria Histórica con Medallón de Bronce y Brújula -->
+                <div class="carousel-item" style="background-image: url('images/carousel-slide2.jpg');">
+                    <div class="carousel-caption">
+                        <div class="hero-badge-tag">
+                            <i class="ri-shield-star-line"></i> Archivo Vivo · Memoria Histórica Scout
+                        </div>
+                        <h2 class="hero-title">
+                            Un Siglo de Aventuras.<br>
+                            <span class="highlight-gold">Una Historia que Sigue Viva.</span>
+                        </h2>
+                        <p class="hero-desc">
+                            Cada fotografía, insignia y cuaderno de bitácora es una llave que abre más de un siglo de escultismo hondureño y hermandad universal.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="#galeria" class="btn-prixima-gold">
+                                <i class="ri-image-line"></i> Galería de Recuerdos
+                            </a>
+                            <a href="https://forms.gle/eAm35mK9SWiV7BKs5" target="_blank" rel="noopener noreferrer" class="btn-prixima-outline-white">
+                                <i class="ri-send-plane-fill"></i> Sumar mi Recuerdo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3: Patrulla Scout en los Pinares Hondureños -->
+                <div class="carousel-item" style="background-image: url('images/carousel-slide3.jpg');">
+                    <div class="carousel-caption">
+                        <div class="hero-badge-tag">
+                            <i class="ri-team-line"></i> Hermandad de Patrulla · En los Pinares
+                        </div>
+                        <h2 class="hero-title">
+                            Hay Recuerdos y Lazos<br>
+                            <span class="highlight-amber">que Nunca se Apagan.</span>
+                        </h2>
+                        <p class="hero-desc">
+                            Vuelve a los campamentos, las patrullas legendarias, las caminatas entre pinos y las amistades selladas para toda la vida.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="https://forms.gle/eAm35mK9SWiV7BKs5" target="_blank" rel="noopener noreferrer" class="btn-prixima-gold">
+                                <i class="ri-quill-pen-line"></i> Enviar mi Historia ↗
+                            </a>
+                            <a href="#accion" class="btn-prixima-outline-white">
+                                <i class="ri-hand-heart-line"></i> Scouts en Acción
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4: Desfile Cívico y Bandera Nacional en Tegucigalpa -->
+                <div class="carousel-item" style="background-image: url('images/carousel-slide4.jpg');">
+                    <div class="carousel-caption">
+                        <div class="hero-badge-tag">
+                            <i class="ri-flag-line"></i> Institución Benemérita de Honduras
+                        </div>
+                        <h2 class="hero-title">
+                            105 Años de Honor, Civismo<br>
+                            <span class="highlight-gold">y Servicio a la Patria.</span>
+                        </h2>
+                        <p class="hero-desc">
+                            El paso firme de generaciones de jóvenes y dirigentes que han dejado el mundo en mejores condiciones de como lo encontraron.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="#linea-tiempo" class="btn-prixima-gold">
+                                <i class="ri-time-line"></i> Recorrer la Cronología
+                            </a>
+                            <a href="#eventos" class="btn-prixima-outline-white">
+                                <i class="ri-earth-line"></i> Eventos Mundiales
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flechas de Control -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#priximaHeroCarousel" data-bs-slide="prev" aria-label="Anterior">
+                <i class="ri-arrow-left-s-line fs-3"></i>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#priximaHeroCarousel" data-bs-slide="next" aria-label="Siguiente">
+                <i class="ri-arrow-right-s-line fs-3"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- =========================================================================
+         SECCIÓN: SOBRE EL PROYECTO (PRIXIMA ABOUT 2 COLUMNS)
+         ========================================================================= -->
+    <section id="sobre" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <!-- Columna Izquierda: Composición Visual con Medallón Dorado -->
+                <div class="col-lg-6">
+                    <div class="about-image-wrapper">
+                        <img src="images/scout-adventure-leader.jpg" alt="Líder Scout con equipo de campo y bitácora" class="about-main-img">
+                        <!-- Medallón Dorado Flotante -->
+                        <div class="about-badge-floating">
+                            <img src="images/medalla-scout-oro.jpg" alt="Medalla Conmemorativa Historias Scouts" class="badge-medal-img">
+                            <div>
+                                <div class="badge-medal-title">105 Años</div>
+                                <div class="badge-medal-sub">Memoria & Hermandad</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Texto & Pilares -->
+                <div class="col-lg-6">
+                    <div class="about-content-wrap">
+                        <span class="section-eyebrow">
+                            <i class="ri-compass-discover-line"></i> Conoce Nuestra Misión
+                        </span>
+                        <h2 class="section-heading">
+                            Un Espacio Vivo para Conectar Generaciones y Honrar el Escultismo Hondureño
+                        </h2>
+                        <p class="about-lead">
+                            El proyecto <strong>Historias Scouts de Honduras</strong> nace como un espacio de encuentro y preservación para rescatar, digitalizar y compartir el valioso patrimonio de miles de jóvenes y adultos que han vivido la Promesa Scout en nuestro país.
+                        </p>
+                        <p class="text-secondary" style="line-height: 1.7; text-align: justify;">
+                            Desde aquellos primeros pasos dados en 1921 en la Escuela Normal de Varones La Alhambra, en el histórico Barrio La Leona de Tegucigalpa, hasta las comunidades de La Lima Nueva y todo el territorio nacional, cada vivencia merece ser contada. Este portal interactivo, junto a las redes y un futuro <strong>libro conmemorativo</strong>, celebran más de un siglo de servicio, campismo y fraternidad.
+                        </p>
+
+                        <!-- Puntos Clave Estilo Prixima -->
+                        <ul class="feature-check-list">
+                            <li class="feature-check-item">
+                                <div class="feature-check-icon"><i class="ri-check-line"></i></div>
+                                <div class="feature-check-text">
+                                    <strong>Rescate y Digitalización Documental</strong>
+                                    <span>Salvaguardamos álbumes, cuadernos de bitácora, parches y fotografías históricas.</span>
+                                </div>
+                            </li>
+                            <li class="feature-check-item">
+                                <div class="feature-check-icon"><i class="ri-check-line"></i></div>
+                                <div class="feature-check-text">
+                                    <strong>Encuentro y Diálogo Intergeneracional</strong>
+                                    <span>Reunimos a viejos lobos, dirigentes históricos y rovers en un mismo fuego fraternal.</span>
+                                </div>
+                            </li>
+                            <li class="feature-check-item">
+                                <div class="feature-check-icon"><i class="ri-check-line"></i></div>
+                                <div class="feature-check-text">
+                                    <strong>Publicación del Libro Conmemorativo</strong>
+                                    <span>Compilación fidedigna de testimonios que rendirá tributo a más de un siglo de historia.</span>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- Tarjetas de Misión y Visión con Efecto Popup al Pasar el Cursor -->
+                        <div class="row g-3 pt-2 mission-vision-container">
+                            <div class="col-md-6 mission-col">
+                                <div class="mission-vision-card popup-card" tabindex="0">
+                                    <div class="mission-popup-header">
+                                        <span class="popup-pill-tag"><i class="ri-focus-3-line"></i> Propósito Institucional</span>
+                                        <span class="popup-expand-icon" title="Pasa el cursor para ampliar"><i class="ri-fullscreen-line"></i></span>
+                                    </div>
+                                    <div class="mission-card-header">
+                                        <div class="mission-icon"><i class="ri-flag-fill"></i></div>
+                                        <h4>Misión</h4>
+                                    </div>
+                                    <p>Rescatar, digitalizar, resguardar y difundir el acervo histórico y testimonial del Movimiento Scout en Honduras, construyendo un archivo documental e interactivo que rinda homenaje a sus protagonistas, fortalezca la identidad institucional y preserve los valores de servicio y fraternidad como fuente de inspiración para las presentes y futuras generaciones.</p>
+                                    <div class="popup-card-footer">
+                                        <span class="popup-badge-gold"><i class="ri-shield-star-fill"></i> Memoria Scout de Honduras</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mission-col">
+                                <div class="mission-vision-card popup-card" tabindex="0">
+                                    <div class="mission-popup-header">
+                                        <span class="popup-pill-tag"><i class="ri-compass-3-line"></i> Horizonte 2026+</span>
+                                        <span class="popup-expand-icon" title="Pasa el cursor para ampliar"><i class="ri-fullscreen-line"></i></span>
+                                    </div>
+                                    <div class="mission-card-header">
+                                        <div class="mission-icon"><i class="ri-eye-fill"></i></div>
+                                        <h4>Visión</h4>
+                                    </div>
+                                    <p>Consolidarse como el principal referente digital y documental de la memoria histórica del Escultismo en Honduras, siendo una plataforma viva de encuentro intergeneracional y una fuente permanente de divulgación de los valores y el impacto social del Movimiento en el país.</p>
+                                    <div class="popup-card-footer">
+                                        <span class="popup-badge-gold"><i class="ri-fire-fill"></i> Legado Centenario</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         SECCIÓN DE ARTÍCULOS & REVISTA DIGITAL (FLIPBOOK INTERACTIVO)
+         ========================================================================= -->
+    <section id="articulos" class="section-padding articles-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">
+                    <i class="ri-book-open-line"></i> Publicación Conmemorativa & Artículos
+                </span>
+                <h2 class="section-heading">Edición Digital: Historias Scout HN</h2>
+                <p class="section-subtitle">
+                    Hojéala online: Sumérgete en nuestra primera edición conmemorativa con crónicas históricas, fotografías de archivo, documentos inéditos y relatos de más de un siglo de escultismo en Honduras.
+                </p>
+            </div>
+
+            <!-- Caja Principal del Artículo / Flipbook -->
+            <div class="article-showcase-card">
+                <div class="row g-4 align-items-center">
+                    <!-- Columna de Información Editorial del Artículo -->
+                    <div class="col-lg-5 order-2 order-lg-1">
+                        <div class="article-meta-badge">
+                            <span class="badge-edition"><i class="ri-article-line"></i> Boletín Oficial B-01</span>
+                            <span class="badge-status-live"><i class="ri-checkbox-circle-fill"></i> Lectura Interactiva</span>
+                        </div>
+                        <h3 class="article-showcase-title">
+                            Historias Scouts de Honduras · Primera Edición
+                        </h3>
+                        <p class="article-showcase-lead">
+                            Un homenaje vivo a quienes han caminado bajo la Promesa Scout, con material rescatado de bitácoras de patrulla y álbumes familiares.
+                        </p>
+                        <ul class="article-topics-list">
+                            <li><i class="ri-bookmark-3-fill text-warning"></i> <strong>Orígenes de 1921:</strong> Los primeros grupos en La Alhambra y La Lima Nueva.</li>
+                            <li><i class="ri-bookmark-3-fill text-warning"></i> <strong>Bautismo de Fuego:</strong> La heroica labor en el Incendio de Tegucigalpa (1923).</li>
+                            <li><i class="ri-bookmark-3-fill text-warning"></i> <strong>Mística de Patrulla:</strong> Bandas de mérito, banderines y adiestramiento en los pinares.</li>
+                            <li><i class="ri-bookmark-3-fill text-warning"></i> <strong>Legado Benemérito:</strong> Un siglo forjando ciudadanos íntegros para Honduras.</li>
+                        </ul>
+                        <div class="article-actions-wrap pt-3">
+                            <a href="https://online.fliphtml5.com/historiasscoutshn/Historias-Scout-HN-B01/?fbclid=IwY2xjawVq0IBleHRuA2FlbQIxMABwZG9mAWJyaWQRMXUxUWZobG1UTWZJd1hZWTNzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEfAo1yPkf_ZVo0UV-PIzhZP50F72YAJH8lk9d0xJ1ekZ0mwOD8sY1d2qpyudg_aem_H3kxuEabsd0cCB_Muq5JIQ#p=1" target="_blank" rel="noopener noreferrer" class="btn-prixima-gold">
+                                <i class="ri-book-read-fill"></i> Leer en Pantalla Completa ↗
+                            </a>
+                            <a href="#contacto" class="btn-prixima-purple ms-sm-2 mt-2 mt-sm-0">
+                                <i class="ri-quill-pen-line"></i> Aportar a la Edición B-02
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Columna del Visor Interactivo FlipHTML5 -->
+                    <div class="col-lg-7 order-1 order-lg-2">
+                        <div class="flipbook-wrapper">
+                            <div class="flipbook-topbar">
+                                <div class="flipbook-window-controls">
+                                    <span class="flipbook-dot red"></span>
+                                    <span class="flipbook-dot yellow"></span>
+                                    <span class="flipbook-dot green"></span>
+                                </div>
+                                <span class="flipbook-title-tag">
+                                    <i class="ri-book-2-line text-warning"></i> Visor Interactivo FlipHTML5 · Historias-Scout-HN-B01
+                                </span>
+                                <a href="https://online.fliphtml5.com/historiasscoutshn/Historias-Scout-HN-B01/?fbclid=IwY2xjawVq0IBleHRuA2FlbQIxMABwZG9mAWJyaWQRMXUxUWZobG1UTWZJd1hZWTNzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEfAo1yPkf_ZVo0UV-PIzhZP50F72YAJH8lk9d0xJ1ekZ0mwOD8sY1d2qpyudg_aem_H3kxuEabsd0cCB_Muq5JIQ#p=1" target="_blank" rel="noopener noreferrer" class="flipbook-fullscreen-btn" title="Pantalla completa">
+                                    <i class="ri-fullscreen-line"></i>
+                                </a>
+                            </div>
+                            <div class="flipbook-iframe-ratio">
+                                <iframe src="https://online.fliphtml5.com/historiasscoutshn/Historias-Scout-HN-B01/#p=1" title="Historias Scout HN - B01 Revista Digital" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
+                            </div>
+                            <div class="flipbook-footer-note">
+                                <span><i class="ri-drag-move-2-line text-warning"></i> Hojear: Haz clic o desliza en las esquinas de las páginas</span>
+                                <a href="https://online.fliphtml5.com/historiasscoutshn/Historias-Scout-HN-B01/?fbclid=IwY2xjawVq0IBleHRuA2FlbQIxMABwZG9mAWJyaWQRMXUxUWZobG1UTWZJd1hZWTNzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEfAo1yPkf_ZVo0UV-PIzhZP50F72YAJH8lk9d0xJ1ekZ0mwOD8sY1d2qpyudg_aem_H3kxuEabsd0cCB_Muq5JIQ#p=1" target="_blank" rel="noopener noreferrer" class="flipbook-direct-link">
+                                    Abrir en FlipHTML5 <i class="ri-external-link-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="accion" class="section-padding programs-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">
+                    <i class="ri-hand-heart-line"></i> Acción Social & Ciudadana
+                </span>
+                <h2 class="section-heading">Scouts en Acción: Transformando Honduras</h2>
+                <p class="section-subtitle">
+                    Con una rica trayectoria de <strong>105 años (1921-2026)</strong>, la <strong>Benemérita Asociación Nacional de Scouts de Honduras (BANSH)</strong>, declarada Organización Benemérita por el Congreso Nacional, sigue dejando el mundo en mejores condiciones.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <!-- 1. Lechetón -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card-prixima">
+                        <div class="service-icon-box">
+                            <i class="ri-cup-line"></i>
+                        </div>
+                        <h3 class="service-card-title">Lechetón Honduras</h3>
+                        <p class="service-card-text">
+                            La colecta solidaria de leche más grande del país. 14 años continuos (2013-2026) han alcanzado más de <strong>1.5 millones de vasos</strong>, beneficiando anualmente a más de 70 hogares infantiles y asilos.
+                        </p>
+                        <div class="service-card-footer">
+                            <span class="service-badge">Récord 2026: 174,655 vasos</span>
+                            <button type="button" class="service-btn-action" data-bs-toggle="modal" data-bs-target="#lechetonModal">
+                                Ver Tabla <i class="ri-arrow-right-line"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Ticket to Life -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card-prixima">
+                        <div class="service-icon-box">
+                            <i class="ri-ticket-line"></i>
+                        </div>
+                        <h3 class="service-card-title">Ticket to Life</h3>
+                        <p class="service-card-text">
+                            Programa insignia de inclusión juvenil del Movimiento Scout Mundial. Implementado con éxito en comunidades vulnerables como <strong>Santa Lucía</strong> y <strong>La Montañita del Edén</strong>, empoderando con liderazgo para la vida.
+                        </p>
+                        <div class="service-card-footer">
+                            <span class="service-badge">Inclusión Social OMMS</span>
+                            <a href="#contacto" class="service-btn-action">
+                                Saber Más <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Ayuda Humanitaria -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card-prixima">
+                        <div class="service-icon-box">
+                            <i class="ri-earth-line"></i>
+                        </div>
+                        <h3 class="service-card-title">Ayuda Humanitaria</h3>
+                        <p class="service-card-text">
+                            Solidaridad transfronteriza y respuesta ante emergencias. Coordinación de centros de acopio nacionales, medicinas y víveres en crisis internacionales como Venezuela 2026 y desastres naturales en Honduras.
+                        </p>
+                        <div class="service-card-footer">
+                            <span class="service-badge">Solidaridad Sin Fronteras</span>
+                            <a href="#linea-tiempo" class="service-btn-action">
+                                Ver Hitos <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Voluntariado Rover -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card-prixima">
+                        <div class="service-icon-box">
+                            <i class="ri-tent-line"></i>
+                        </div>
+                        <h3 class="service-card-title">Voluntariado Rover</h3>
+                        <p class="service-card-text">
+                            Jóvenes de 16 a 21 años viviendo la etapa de servicio activo por excelencia. Con el lema "Servir", lideran proyectos de saneamiento, apoyo en asilos y movilización comunitaria en todo el país.
+                        </p>
+                        <div class="service-card-footer">
+                            <span class="service-badge">Liderazgo 16 - 21 Años</span>
+                            <a href="#contacto" class="service-btn-action">
+                                Unirse <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Proyectos Ambientales -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card-prixima">
+                        <div class="service-icon-box">
+                            <i class="ri-tree-line"></i>
+                        </div>
+                        <h3 class="service-card-title">Proyectos Ambientales</h3>
+                        <p class="service-card-text">
+                            La ley scout exige amar y proteger la naturaleza. Reforestación masiva en reservas hondureñas, limpieza de cuencas fluviales y talleres de educación ecológica ante el cambio climático.
+                        </p>
+                        <div class="service-card-footer">
+                            <span class="service-badge">Conservación & Clima</span>
+                            <a href="#galeria" class="service-btn-action">
+                                Ver Fotos <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Reconocimiento Benemérito & OMMS -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card-prixima">
+                        <div class="service-icon-box">
+                            <i class="ri-government-line"></i>
+                        </div>
+                        <h3 class="service-card-title">Institución Benemérita</h3>
+                        <p class="service-card-text">
+                            Reconocimiento oficial por el Congreso Nacional en 2022 y vinculación plena a la Organización Mundial del Movimiento Scout (OMMS), llevando el estandarte hondureño a los Jamborees del mundo.
+                        </p>
+                        <div class="service-card-footer">
+                            <span class="service-badge">Decreto de Estado 2022</span>
+                            <a href="#eventos" class="service-btn-action">
+                                Ver Red <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         MODAL INTERACTIVO: TABLA LECHETÓN HONDURAS
+         ========================================================================= -->
+    <div class="modal fade" id="lechetonModal" tabindex="-1" aria-labelledby="lechetonModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow-lg" style="border-radius: 20px; overflow: hidden;">
+                <div class="modal-header text-white" style="background: linear-gradient(135deg, var(--scout-purple-900), var(--scout-purple-600)); border-bottom: 3px solid var(--scout-gold-base);">
+                    <h5 class="modal-title fw-bold" id="lechetonModalLabel">
+                        <i class="ri-cup-line text-warning me-2"></i> Lechetón Honduras: Metas y Resultados Históricos
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <p class="text-secondary mb-3">
+                        En alianza con empresas socialmente responsables y la ciudadanía, los Scouts de Honduras han recolectado más de 1.5 millones de vasos de leche en 14 años de historia:
+                    </p>
+                    <div class="table-responsive">
+                        <table class="events-table-modern">
+                            <thead>
+                                <tr>
+                                    <th>Año</th>
+                                    <th>Edición</th>
+                                    <th>Meta Propuesta</th>
+                                    <th>Resultado Obtenido</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="badge-event-year">2022</td>
+                                    <td>10.ª Edición</td>
+                                    <td>50,000 vasos</td>
+                                    <td><strong class="text-success">105,260 vasos</strong> (Meta superada)</td>
+                                </tr>
+                                <tr>
+                                    <td class="badge-event-year">2024</td>
+                                    <td>12.ª Edición</td>
+                                    <td>50,000 vasos</td>
+                                    <td><strong class="text-success">158,750 vasos</strong> (Meta triplicada)</td>
+                                </tr>
+                                <tr>
+                                    <td class="badge-event-year">2025</td>
+                                    <td>13.ª Edición</td>
+                                    <td>65,000 vasos</td>
+                                    <td><strong class="text-success">155,890 vasos</strong> (Meta superada)</td>
+                                </tr>
+                                <tr>
+                                    <td class="badge-event-year">2026</td>
+                                    <td>14.ª Edición</td>
+                                    <td>60,000 vasos</td>
+                                    <td><strong class="text-primary fw-bold">174,655 vasos</strong> (Récord Histórico)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="mt-4 p-3 bg-light rounded-3 text-center">
+                        <p class="mb-0 text-muted small">
+                            <i class="ri-information-line text-warning"></i> Beneficiando anualmente a más de 70 hogares de niños, asilos de ancianos y comedores sociales en toda Honduras.
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer bg-light">
+                    <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="https://forms.gle/eAm35mK9SWiV7BKs5" target="_blank" rel="noopener noreferrer" class="btn-prixima-gold">
+                        Unirme como Voluntario
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================================================================
+         LÍNEA DE TIEMPO INTERACTIVA (PRIXIMA ROADMAP / JOURNEY)
+         ========================================================================= -->
+    <section id="linea-tiempo" class="section-padding timeline-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">
+                    <i class="ri-history-line"></i> Cuaderno de Bitácora Virtual
+                </span>
+                <h2 class="section-heading">Más de un Siglo, Paso a Paso</h2>
+                <p class="section-subtitle">
+                    Navega a través de los hitos más emblemáticos de la historia scout nacional e internacional desde 1921 hasta el presente.
+                </p>
+            </div>
+
+            <!-- Filtros de Época y Barra de Búsqueda Dinámica -->
+            <div class="timeline-filter-box">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="position-relative">
+                            <i class="ri-search-line search-icon-pos"></i>
+                            <input type="text" id="timeline-search" class="timeline-search-input" placeholder="Buscar hito, ciudad, año o personaje (ej: La Lima, Incendio, 1957, Mitch)...">
+                        </div>
+                        <div class="timeline-pills">
+                            <button type="button" class="timeline-pill-btn active" data-filter="all">Todos los Hitos</button>
+                            <button type="button" class="timeline-pill-btn" data-filter="inicios">Inicios (1920-1949)</button>
+                            <button type="button" class="timeline-pill-btn" data-filter="consolidacion">Consolidación (1950-1969)</button>
+                            <button type="button" class="timeline-pill-btn" data-filter="servicio">Servicio y Centenario (1970-Hoy)</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Árbol de la Línea de Tiempo -->
+            <div class="timeline-tree">
+                <!-- 1921 -->
+                <div class="timeline-node left" data-epoch="inicios">
+                    <div class="timeline-node-pin"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <span class="timeline-year-badge">1921</span>
+                            <span class="timeline-country-badge">🇭🇳 Honduras</span>
+                        </div>
+                        <h3 class="timeline-title">Primer Grupo Scout en La Lima Nueva y La Alhambra</h3>
+                        <p class="timeline-body">
+                            Nace formalmente el primer grupo scout en suelo hondureño y en la Escuela Normal de Varones La Alhambra en La Leona, Tegucigalpa, fundado por pioneros locales y educadores visionarios.
+                        </p>
+                        <div class="timeline-location-tag">
+                            <i class="ri-map-pin-line"></i> La Lima Nueva & Tegucigalpa
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 1923 -->
+                <div class="timeline-node right" data-epoch="inicios">
+                    <div class="timeline-node-pin"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <span class="timeline-year-badge">1923</span>
+                            <span class="timeline-country-badge">🇭🇳 Honduras</span>
+                        </div>
+                        <h3 class="timeline-title">Bautismo de Fuego: El Gran Incendio de Tegucigalpa</h3>
+                        <p class="timeline-body">
+                            Los scouts de la Escuela Normal de Varones participan heroicamente salvando vidas, archivos oficiales y propiedades durante una conflagración que amenazaba la capital.
+                        </p>
+                        <div class="timeline-location-tag">
+                            <i class="ri-map-pin-line"></i> Barrio La Leona, Tegucigalpa
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 1928 -->
+                <div class="timeline-node left" data-epoch="inicios">
+                    <div class="timeline-node-pin"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <span class="timeline-year-badge">1928</span>
+                            <span class="timeline-country-badge">🇭🇳 Honduras</span>
+                        </div>
+                        <h3 class="timeline-title">Expansión a San Pedro Sula, La Ceiba y El Progreso</h3>
+                        <p class="timeline-body">
+                            El movimiento cruza montañas y se consolida con nuevas tropas juveniles en la costa norte, creando hermandad en los departamentos de Cortés, Atlántida y Yoro.
+                        </p>
+                        <div class="timeline-location-tag">
+                            <i class="ri-map-pin-line"></i> Costa Norte y Zona Central
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 1952 -->
+                <div class="timeline-node right" data-epoch="consolidacion">
+                    <div class="timeline-node-pin"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <span class="timeline-year-badge">1952</span>
+                            <span class="timeline-country-badge">🇭🇳 Honduras</span>
+                        </div>
+                        <h3 class="timeline-title">Reorganización de la Asociación Nacional de Scouts</h3>
+                        <p class="timeline-body">
+                            Estructuración institucional unificada para coordinar formalmente a todas las tropas, manadas y patrullas del país bajo estatutos reglamentarios sólidos.
+                        </p>
+                        <div class="timeline-location-tag">
+                            <i class="ri-map-pin-line"></i> Tegucigalpa, Honduras
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 1957 -->
+                <div class="timeline-node left" data-epoch="consolidacion">
+                    <div class="timeline-node-pin"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <span class="timeline-year-badge">1957</span>
+                            <span class="timeline-country-badge">🌍 Reconocimiento Mundial</span>
+                        </div>
+                        <h3 class="timeline-title">Admisión Oficial Plena por la OMMS (WOSM)</h3>
+                        <p class="timeline-body">
+                            Honduras obtiene el reconocimiento oficial por la Organización Mundial del Movimiento Scout, integrándose con derecho pleno a las conferencias y Jamborees planetarios.
+                        </p>
+                        <div class="timeline-location-tag">
+                            <i class="ri-global-line"></i> Conferencia Mundial OMMS
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 1960 -->
+                <div class="timeline-node right" data-epoch="consolidacion">
+                    <div class="timeline-node-pin"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <span class="timeline-year-badge">1960</span>
+                            <span class="timeline-country-badge">🇭🇳 Ley de la República</span>
+                        </div>
+                        <h3 class="timeline-title">Decreto Ley de Protección y Amparo al Escultismo</h3>
+                        <p class="timeline-body">
+                            El Congreso Nacional de Honduras aprueba el Decreto que reconoce la personería, insignias y protección oficial de Estado a la Asociación Scout hondureña.
+                        </p>
+                        <div class="timeline-location-tag">
+                            <i class="ri-government-line"></i> Congreso Nacional de Honduras
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 1974 -->
+                <div class="timeline-node left" data-epoch="servicio">
+                    <div class="timeline-node-pin"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <span class="timeline-year-badge">1974</span>
+                            <span class="timeline-country-badge">🇭🇳 Servicio Humanitario</span>
+                        </div>
+                        <h3 class="timeline-title">Servicio y Rescate en Emergencia: Huracán Fifí</h3>
+                        <p class="timeline-body">
+                            Despliegue ejemplar de centenares de scouts en cocinas de campo, primeros auxilios, albergues y distribución de ayuda humanitaria en la costa norte damnificada.
+                        </p>
+                        <div class="timeline-location-tag">
+                            <i class="ri-map-pin-line"></i> Choloma y Zona Norte
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 1998 -->
+                <div class="timeline-node right" data-epoch="servicio">
+                    <div class="timeline-node-pin"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <span class="timeline-year-badge">1998</span>
+                            <span class="timeline-country-badge">🇭🇳 Solidaridad Nacional</span>
+                        </div>
+                        <h3 class="timeline-title">Movilización Nacional ante el Huracán Mitch</h3>
+                        <p class="timeline-body">
+                            La mayor movilización de la juventud scout en la historia contemporánea: canalización de toneladas de víveres, rescates y reconstrucción comunitaria.
+                        </p>
+                        <div class="timeline-location-tag">
+                            <i class="ri-map-pin-line"></i> Todo el Territorio Nacional
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2021 -->
+                <div class="timeline-node left" data-epoch="servicio">
+                    <div class="timeline-node-pin"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <span class="timeline-year-badge">2021</span>
+                            <span class="timeline-country-badge">🇭🇳 Centenario</span>
+                        </div>
+                        <h3 class="timeline-title">Centenario del Escultismo Hondureño (1921 — 2021)</h3>
+                        <p class="timeline-body">
+                            Cien años ininterrumpidos formando ciudadanas y ciudadanos íntegros, con actividades conmemorativas que celebraron el centenario de la Promesa Scout en el país.
+                        </p>
+                        <div class="timeline-location-tag">
+                            <i class="ri-medal-line"></i> Honduras Centenaria
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2022 -->
+                <div class="timeline-node right" data-epoch="servicio">
+                    <div class="timeline-node-pin"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <span class="timeline-year-badge">2022</span>
+                            <span class="timeline-country-badge">🏛️ Distinción de Estado</span>
+                        </div>
+                        <h3 class="timeline-title">Declaratoria Oficial como Organización Benemérita</h3>
+                        <p class="timeline-body">
+                            El soberano Congreso Nacional confiere a la Asociación Nacional de Scouts de Honduras el título honorífico de "Organización Benemérita de la Patria" por sus aportes invaluables a la nación.
+                        </p>
+                        <div class="timeline-location-tag">
+                            <i class="ri-award-line"></i> Tegucigalpa, Honduras
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2026 -->
+                <div class="timeline-node left" data-epoch="servicio">
+                    <div class="timeline-node-pin"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <span class="timeline-year-badge">2026</span>
+                            <span class="timeline-country-badge">🚀 Vanguardia y Presente</span>
+                        </div>
+                        <h3 class="timeline-title">105 Años de Escultismo & Récord Histórico de Servicio</h3>
+                        <p class="timeline-body">
+                            105 años de historia viva. Lanzamiento del archivo interactivo, consolidación de la 14.ª Lechetón con 174,655 vasos de leche y preparación para los eventos mundiales de Portugal y Polonia.
+                        </p>
+                        <div class="timeline-location-tag">
+                            <i class="ri-fire-line"></i> Archivo Vivo & BANSH
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         ARCHIVO AUDIOVISUAL: VOCES DE LA FOGATA (PRIXIMA VIDEO HUB)
+         ========================================================================= -->
+    <section id="videos" class="section-padding video-section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow" style="background: rgba(201, 151, 56, 0.2); border-color: var(--scout-gold-base); color: var(--scout-gold-bright);">
+                    <i class="ri-movie-2-line"></i> Archivo Audiovisual
+                </span>
+                <h2 class="section-heading text-white">Voces que Vuelven a Encender la Fogata</h2>
+                <p class="section-subtitle">
+                    Relatos en primera persona, encuentros de hermandad y testimonios de quienes vivieron la promesa scout en carne propia.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Video 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="video-card-prixima">
+                        <div class="video-thumb-wrapper" data-video-id="Gg5HCvU9I7E" data-video-title="Historias Scouts de Honduras: Capítulo 1">
+                            <img src="https://img.youtube.com/vi/Gg5HCvU9I7E/hqdefault.jpg" onerror="this.onerror=null; this.src='images/VID2 01.jpg';" alt="Miniatura Video: Historias que nos Reúnen" class="video-thumb-img" loading="lazy">
+                            <div class="video-play-overlay">
+                                <div class="video-play-btn"><i class="ri-play-fill"></i></div>
+                                <span class="video-badge-duration"><i class="ri-youtube-fill text-danger"></i> Reproducir</span>
+                            </div>
+                        </div>
+                        <div class="video-card-body">
+                            <span class="video-card-tag">Episodio 01</span>
+                            <h4 class="video-card-title">Historias que nos Reúnen</h4>
+                            <p class="video-card-caption">Testimonios sobre los lazos fraternales construidos alrededor de la fogata.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="video-card-prixima">
+                        <div class="video-thumb-wrapper" data-video-id="bQ2kYXKQWgc" data-video-title="Historias Scouts de Honduras: Capítulo 2">
+                            <img src="https://img.youtube.com/vi/bQ2kYXKQWgc/hqdefault.jpg" onerror="this.onerror=null; this.src='images/VID2 02.jpg';" alt="Miniatura Video: El Legado Scout Hondureño" class="video-thumb-img" loading="lazy">
+                            <div class="video-play-overlay">
+                                <div class="video-play-btn"><i class="ri-play-fill"></i></div>
+                                <span class="video-badge-duration"><i class="ri-youtube-fill text-danger"></i> Reproducir</span>
+                            </div>
+                        </div>
+                        <div class="video-card-body">
+                            <span class="video-card-tag">Episodio 02</span>
+                            <h4 class="video-card-title">El Legado Scout Hondureño</h4>
+                            <p class="video-card-caption">Dirigentes que marcaron generaciones de jóvenes en campamentos y tropas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="video-card-prixima">
+                        <div class="video-thumb-wrapper" data-video-id="y8VdC49yGW8" data-video-title="Historias Scouts de Honduras: Capítulo 3">
+                            <img src="https://img.youtube.com/vi/y8VdC49yGW8/hqdefault.jpg" onerror="this.onerror=null; this.src='images/VID2 03.jpg';" alt="Miniatura Video: Recuerdos de una Patrulla" class="video-thumb-img" loading="lazy">
+                            <div class="video-play-overlay">
+                                <div class="video-play-btn"><i class="ri-play-fill"></i></div>
+                                <span class="video-badge-duration"><i class="ri-youtube-fill text-danger"></i> Reproducir</span>
+                            </div>
+                        </div>
+                        <div class="video-card-body">
+                            <span class="video-card-tag">Episodio 03</span>
+                            <h4 class="video-card-title">Recuerdos de una Patrulla</h4>
+                            <p class="video-card-caption">Anécdotas entrañables, caminatas, canciones y aventuras en los pinares.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="video-card-prixima">
+                        <div class="video-thumb-wrapper" data-video-id="eUK9AwYjpTw" data-video-title="Historias Scouts de Honduras: Capítulo 4">
+                            <img src="https://img.youtube.com/vi/eUK9AwYjpTw/hqdefault.jpg" onerror="this.onerror=null; this.src='images/VID2 04.jpg';" alt="Miniatura Video: La Aventura Continúa" class="video-thumb-img" loading="lazy">
+                            <div class="video-play-overlay">
+                                <div class="video-play-btn"><i class="ri-play-fill"></i></div>
+                                <span class="video-badge-duration"><i class="ri-youtube-fill text-danger"></i> Reproducir</span>
+                            </div>
+                        </div>
+                        <div class="video-card-body">
+                            <span class="video-card-tag">Episodio 04</span>
+                            <h4 class="video-card-title">La Aventura Continúa</h4>
+                            <p class="video-card-caption">La visión de futuro del escultismo y su llamado a las nuevas generaciones.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         GALERÍA DE RECUERDOS (PRIXIMA PORTFOLIO FILTER & LIGHTBOX)
+         ========================================================================= -->
+    <section id="galeria" class="section-padding gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">
+                    <i class="ri-camera-lens-line"></i> Álbum Fotográfico Histórico
+                </span>
+                <h2 class="section-heading">Instantáneas de una Hermandad Centenaria</h2>
+                <p class="section-subtitle">
+                    Haz clic en cualquier imagen para abrirla en alta resolución y revivir los momentos más memorables.
+                </p>
+            </div>
+
+            <!-- Botones de Filtro Estilo Prixima -->
+            <div class="portfolio-filter-buttons">
+                <button type="button" class="portfolio-filter-btn active" data-filter="all">Todas las Fotos</button>
+                <button type="button" class="portfolio-filter-btn" data-filter="campamentos">Campamentos & Naturaleza</button>
+                <button type="button" class="portfolio-filter-btn" data-filter="patrullas">Patrullas & Tropas</button>
+                <button type="button" class="portfolio-filter-btn" data-filter="jamborees">Jamborees & Eventos</button>
+            </div>
+
+            <!-- Grilla de Tarjetas de Galería -->
+            <div class="gallery-grid-prixima">
+                <!-- Foto 1 -->
+                <div class="portfolio-card" data-category="jamborees">
+                    <img src="images/historia1.jpg" alt="Representación hondureña en el Jamboree Nacional de 1989" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Jamborees</span>
+                        <h4 class="portfolio-title">Jamboree Nacional 1989</h4>
+                        <div class="portfolio-zoom-btn"><i class="ri-zoom-in-line"></i></div>
+                    </div>
+                </div>
+
+                <!-- Foto 2 -->
+                <div class="portfolio-card" data-category="patrullas">
+                    <img src="images/historia2.jpg" alt="Sesión de adiestramiento y liderazgo para jóvenes scouts" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Formación</span>
+                        <h4 class="portfolio-title">Adiestramiento de Liderazgo Scout</h4>
+                        <div class="portfolio-zoom-btn"><i class="ri-zoom-in-line"></i></div>
+                    </div>
+                </div>
+
+                <!-- Foto 3 -->
+                <div class="portfolio-card" data-category="patrullas">
+                    <img src="images/historia3.jpg" alt="Patrulla de honor luciendo sus bandas de mérito en el bosque" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Patrullas</span>
+                        <h4 class="portfolio-title">Patrulla de Honor en los Pinares</h4>
+                        <div class="portfolio-zoom-btn"><i class="ri-zoom-in-line"></i></div>
+                    </div>
+                </div>
+
+                <!-- Foto 4 -->
+                <div class="portfolio-card" data-category="campamentos">
+                    <img src="images/historia4.jpg" alt="Reunión de tropa al aire libre planificando la caminata" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Campamentos</span>
+                        <h4 class="portfolio-title">Planificación de Ruta al Aire Libre</h4>
+                        <div class="portfolio-zoom-btn"><i class="ri-zoom-in-line"></i></div>
+                    </div>
+                </div>
+
+                <!-- Foto 5 -->
+                <div class="portfolio-card" data-category="patrullas">
+                    <img src="images/historia5.jpg" alt="Ceremonia formal de izado de bandera scout bajo las palmeras" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Ceremonial</span>
+                        <h4 class="portfolio-title">Izado de Bandera Scout</h4>
+                        <div class="portfolio-zoom-btn"><i class="ri-zoom-in-line"></i></div>
+                    </div>
+                </div>
+
+                <!-- Foto 6 -->
+                <div class="portfolio-card" data-category="campamentos">
+                    <img src="images/galeria1.jpg" alt="Jóvenes scouts ondeando banderas en campamento forestal" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Campamentos</span>
+                        <h4 class="portfolio-title">Banderas al Viento en Campamento</h4>
+                        <div class="portfolio-zoom-btn"><i class="ri-zoom-in-line"></i></div>
+                    </div>
+                </div>
+
+                <!-- Foto 7 -->
+                <div class="portfolio-card" data-category="patrullas">
+                    <img src="images/galeria2.jpg" alt="Dirigentes scouts planificando actividades en el mapa nacional" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Dirigencia</span>
+                        <h4 class="portfolio-title">Estrategia y Rutas en el Mapa</h4>
+                        <div class="portfolio-zoom-btn"><i class="ri-zoom-in-line"></i></div>
+                    </div>
+                </div>
+
+                <!-- Foto 8 -->
+                <div class="portfolio-card" data-category="patrullas">
+                    <img src="images/galeria3.jpg" alt="Patrulla scout histórica con su banderín de honor" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Patrullas</span>
+                        <h4 class="portfolio-title">Patrulla Histórica y Banderín</h4>
+                        <div class="portfolio-zoom-btn"><i class="ri-zoom-in-line"></i></div>
+                    </div>
+                </div>
+
+                <!-- Foto 9 -->
+                <div class="portfolio-card" data-category="jamborees">
+                    <img src="images/galeria4.jpg" alt="Delegación hondureña en el XIII Camporee Scout Centroamericano" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Camporees</span>
+                        <h4 class="portfolio-title">XIII Camporee Centroamericano</h4>
+                        <div class="portfolio-zoom-btn"><i class="ri-zoom-in-line"></i></div>
+                    </div>
+                </div>
+
+                <!-- Foto 10 -->
+                <div class="portfolio-card" data-category="patrullas">
+                    <img src="images/galeria5.jpg" alt="Scouts en uniforme clásico durante una jornada formativa" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Tradición</span>
+                        <h4 class="portfolio-title">Uniforme Clásico y Jornada Formativa</h4>
+                        <div class="portfolio-zoom-btn"><i class="ri-zoom-in-line"></i></div>
+                    </div>
+                </div>
+
+                <!-- Foto 11: Campfire Night (User upload) -->
+                <div class="portfolio-card" data-category="campamentos">
+                    <img src="images/fogata-nocturna.jpg" alt="Fogata scout bajo el cielo crepuscular y estrellado" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Mística</span>
+                        <h4 class="portfolio-title">Fuego de Campamento Bajo las Estrellas</h4>
+                        <div class="portfolio-zoom-btn"><i class="ri-zoom-in-line"></i></div>
+                    </div>
+                </div>
+
+                <!-- Foto 12: Scout Montaña (User upload) -->
+                <div class="portfolio-card" data-category="campamentos">
+                    <img src="images/scout-montana-fleurdelis.jpg" alt="Scout contemplando el horizonte montañoso con la flor de lis" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Horizonte</span>
+                        <h4 class="portfolio-title">Vigía Scout en la Cumbre Hondureña</h4>
+                        <div class="portfolio-zoom-btn"><i class="ri-zoom-in-line"></i></div>
+                    </div>
+                </div>
+
+                <!-- Foto 13: Memoria Histórica Scouts of the World 1968 -->
+                <div class="portfolio-card" data-category="patrullas">
+                    <img src="images/carousel-slide2.jpg" alt="Cuadro de Memoria Histórica con Medallón de Bronce y Foto 1968" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Pioneros</span>
+                        <h4 class="portfolio-title">Memoria Histórica & Medallón Scout (1968)</h4>
+                        <div class="portfolio-zoom-btn"><i class="ri-zoom-in-line"></i></div>
+                    </div>
+                </div>
+
+                <!-- Foto 14: Patrulla en los Pinares -->
+                <div class="portfolio-card" data-category="patrullas">
+                    <img src="images/carousel-slide3.jpg" alt="Patrulla scout sentada en tronco de pino en el bosque" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Patrullas</span>
+                        <h4 class="portfolio-title">Hermandad de Patrulla en los Pinares</h4>
+                        <div class="portfolio-zoom-btn"><i class="ri-zoom-in-line"></i></div>
+                    </div>
+                </div>
+
+                <!-- Foto 15: Desfile Cívico Tegucigalpa -->
+                <div class="portfolio-card" data-category="jamborees">
+                    <img src="images/carousel-slide4.jpg" alt="Desfile cívico de scouts con bandera nacional y ofrenda floral en Tegucigalpa" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Civismo</span>
+                        <h4 class="portfolio-title">Desfile Cívico y Bandera Nacional</h4>
+                        <div class="portfolio-zoom-btn"><i class="ri-zoom-in-line"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         EVENTOS INTERNACIONALES (PRIXIMA DATA CARDS)
+         ========================================================================= -->
+    <section id="eventos" class="section-padding events-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">
+                    <i class="ri-global-line"></i> Presencia en el Mundo
+                </span>
+                <h2 class="section-heading">Eventos Mundiales & Centroamericanos</h2>
+                <p class="section-subtitle">
+                    Honduras presente en los más grandes encuentros juveniles y campamentos internacionales de la hermandad scout.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Tabla Mundiales -->
+                <div class="col-lg-6">
+                    <div class="events-box h-100">
+                        <h3><i class="ri-earth-line text-warning"></i> Eventos Mundiales (OMMS)</h3>
+                        <div class="table-responsive">
+                            <table class="events-table-modern">
+                                <thead>
+                                    <tr>
+                                        <th>Año</th>
+                                        <th>Evento</th>
+                                        <th>Sede</th>
+                                        <th>Honduras</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="badge-event-year">2023</td>
+                                        <td>25° Jamboree Mundial</td>
+                                        <td>Saemangeum, Corea del Sur</td>
+                                        <td><span class="badge bg-success-subtle text-success fw-bold">Delegación Presente</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="badge-event-year">2025</td>
+                                        <td>17° Moot Scout Mundial</td>
+                                        <td>Ovar, Portugal</td>
+                                        <td><span class="badge bg-primary-subtle text-primary fw-bold">Delegación Confirmada</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="badge-event-year">2027</td>
+                                        <td>26° Jamboree Mundial</td>
+                                        <td>Gdańsk, Polonia</td>
+                                        <td><span class="badge bg-warning-subtle text-dark fw-bold">Convocatoria Abierta</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="badge-event-year">2029</td>
+                                        <td>18° Moot Scout Mundial</td>
+                                        <td>China</td>
+                                        <td><span class="badge bg-secondary-subtle text-secondary fw-bold">Próxima Sede</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tabla Centroamericanos -->
+                <div class="col-lg-6">
+                    <div class="events-box h-100">
+                        <h3><i class="ri-compass-3-line text-warning"></i> Eventos Centroamericanos & Regionales</h3>
+                        <div class="table-responsive">
+                            <table class="events-table-modern">
+                                <thead>
+                                    <tr>
+                                        <th>Año</th>
+                                        <th>Evento</th>
+                                        <th>Sede</th>
+                                        <th>Notas</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="badge-event-year">2010</td>
+                                        <td>XXIII Camporee Scout</td>
+                                        <td>Santa Tecla, El Salvador</td>
+                                        <td>Campamento Regional</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="badge-event-year">2018</td>
+                                        <td>Camporee Internacional</td>
+                                        <td>Valle de Ángeles, Honduras</td>
+                                        <td>Honduras Anfitrión</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="badge-event-year">2019</td>
+                                        <td>XXVI Camporee Scout</td>
+                                        <td>Valle de Ángeles, Honduras</td>
+                                        <td>Honduras Sede Regional</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="badge-event-year">2024</td>
+                                        <td>Campamento 29° Aniversario</td>
+                                        <td>Campo Meztitla, México</td>
+                                        <td>Participación Internacional</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         MÍSTICA DE FOGATA Y CITA (PRIXIMA TESTIMONIAL QUOTE)
+         ========================================================================= -->
+    <section class="campfire-quote-section">
+        <div class="container">
+            <div class="quote-inner-wrap">
+                <i class="ri-double-quotes-l quote-icon-decor"></i>
+                <blockquote class="quote-main-text">
+                    "Un scout sonríe y canta ante las dificultades. Tratad de dejar este mundo en mejores condiciones de como lo encontrasteis."
+                </blockquote>
+                <div class="quote-author-name">— Lord Robert Baden-Powell de Gilwell</div>
+                <div class="quote-author-title">Fundador del Movimiento Scout Mundial (1857 — 1941)</div>
+                <div class="mt-4">
+                    <a href="https://forms.gle/eAm35mK9SWiV7BKs5" target="_blank" rel="noopener noreferrer" class="btn-prixima-gold">
+                        <i class="ri-fire-fill"></i> Deja tu Huella en la Fogata
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         CONTACTO & PARTICIPACIÓN (PRIXIMA CONTACT 2-COLUMNS)
+         ========================================================================= -->
+    <section id="contacto" class="section-padding contact-section-prixima">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">
+                    <i class="ri-chat-smile-2-line"></i> Forma Parte de la Memoria
+                </span>
+                <h2 class="section-heading">Contáctanos y Suma tu Relato</h2>
+                <p class="section-subtitle">
+                    ¿Tienes fotografías de tus años de campamento, insignias o bitácoras? Ayúdanos a enriquecer este archivo digital y el libro del centenario.
+                </p>
+            </div>
+
+            <div class="row g-5">
+                <!-- Columna Izquierda: Métodos de Contacto & Únete -->
+                <div class="col-lg-5">
+                    <div class="contact-card-info">
+                        <h3 class="fw-bold mb-4" style="color: var(--scout-purple-900);">Información y Comunidad</h3>
+
+                        <div class="contact-method-item">
+                            <div class="contact-method-icon"><i class="ri-mail-send-fill"></i></div>
+                            <div class="contact-method-text">
+                                <h5>Correo Electrónico Oficial</h5>
+                                <a href="mailto:historiascouthn@gmail.com" class="fw-bold text-decoration-underline">historiascouthn@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method-item">
+                            <div class="contact-method-icon"><i class="ri-file-text-fill"></i></div>
+                            <div class="contact-method-text">
+                                <h5>Formulario Oficial de Envío</h5>
+                                <p>Sube fotos, audios o textos directamente a nuestra base de datos.</p>
+                                <a href="https://forms.gle/eAm35mK9SWiV7BKs5" target="_blank" rel="noopener noreferrer" class="fw-bold text-primary">Abrir Google Form ↗</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method-item">
+                            <div class="contact-method-icon"><i class="ri-map-pin-user-fill"></i></div>
+                            <div class="contact-method-text">
+                                <h5>Sede y Cobertura</h5>
+                                <p>Tegucigalpa, Francisco Morazán y enlace con todas las tropas de los 18 departamentos de Honduras.</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 pt-3 border-top">
+                            <h6 class="fw-bold text-dark mb-3">Beneficios de Integrarte:</h6>
+                            <ul class="list-unstyled d-flex flex-column gap-2 text-secondary small">
+                                <li><i class="ri-check-double-line text-warning me-2"></i> Inclusión de tu patrulla en el Libro Conmemorativo.</li>
+                                <li><i class="ri-check-double-line text-warning me-2"></i> Acceso anticipado a galerías digitalizadas.</li>
+                                <li><i class="ri-check-double-line text-warning me-2"></i> Conexión con antiguos compañeros scouts.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Formulario Interactivo -->
+                <div class="col-lg-7">
+                    <div class="contact-form-box">
+                        <h3 class="fw-bold mb-2" style="color: var(--scout-purple-900);">Envíanos un Mensaje</h3>
+                        <p class="text-muted mb-4">Completa el formulario y nos pondremos en contacto contigo para coordinar la digitalización de tu material.</p>
+
+                        <form id="scoutContactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="nombreInput" class="form-label-scout">Tu Nombre Completo *</label>
+                                    <input type="text" id="nombreInput" class="form-control-scout" placeholder="Ej: Roberto Flores" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="emailInput" class="form-label-scout">Correo Electrónico *</label>
+                                    <input type="email" id="emailInput" class="form-control-scout" placeholder="tu@correo.com" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="rolInput" class="form-label-scout">Grupo / Tropa / Período Scout</label>
+                                    <input type="text" id="rolInput" class="form-control-scout" placeholder="Ej: Tropa 21, Grupo 1 Tegucigalpa (1985-1992)">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="asuntoInput" class="form-label-scout">Tipo de Aporte *</label>
+                                    <select id="asuntoInput" class="form-control-scout">
+                                        <option value="Compartir Historia o Anécdota">Compartir Historia o Anécdota</option>
+                                        <option value="Aporte de Fotografías o Documentos">Aporte de Fotografías o Documentos</option>
+                                        <option value="Quiero ser Voluntario Digitalizador">Quiero ser Voluntario Digitalizador</option>
+                                        <option value="Contacto Institucional / Prensa">Contacto Institucional / Prensa</option>
+                                        <option value="Otro">Otro Asunto</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="mensajeInput" class="form-label-scout">Tu Mensaje o Relato *</label>
+                                    <textarea id="mensajeInput" class="form-control-scout" rows="5" placeholder="Cuéntanos brevemente tu experiencia, patrulla o el material histórico con el que cuentas..." required></textarea>
+                                </div>
+                                <div class="col-12 pt-2">
+                                    <button type="submit" class="btn-prixima-gold w-100 justify-content-center py-3 fs-6">
+                                        <i class="ri-send-plane-2-fill"></i> Enviar Mensaje a Historias Scouts
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         FOOTER PRIXIMA (4 COLUMNAS & COPYRIGHT)
+         ========================================================================= -->
+    <footer class="footer-prixima">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Columna 1: Brand & Misión -->
+                <div class="col-lg-4 col-md-6">
+                    <a class="brand-wrapper mb-3" href="#inicio">
+                        <img src="images/medalla-scout-oro.jpg" alt="Logo Medallón Historias Scouts" class="brand-logo-img">
+                        <div class="brand-text-wrap">
+                            <span class="brand-title text-white">HISTORIAS SCOUTS</span>
+                            <span class="brand-subtitle text-warning">DE HONDURAS</span>
+                        </div>
+                    </a>
+                    <p class="footer-desc">
+                        Plataforma de preservación histórica, rescate testimonial y homenaje permanente a más de un siglo del Movimiento Scout en la República de Honduras.
+                    </p>
+                    <div class="footer-social-box">
+                        <span class="d-block text-warning small fw-bold mb-2"><i class="ri-share-forward-fill"></i> Síguenos:</span>
+                        <div class="d-flex align-items-center gap-2">
+                            <a href="https://www.facebook.com/HistoriasScoutHonduras" target="_blank" rel="noopener noreferrer" class="footer-social-btn facebook" title="Facebook"><i class="ri-facebook-fill"></i></a>
+                            <a href="https://www.instagram.com/historiascouthn/" target="_blank" rel="noopener noreferrer" class="footer-social-btn instagram" title="Instagram"><i class="ri-instagram-line"></i></a>
+                            <a href="https://www.youtube.com/@historiasScoutdeHonduras" target="_blank" rel="noopener noreferrer" class="footer-social-btn youtube" title="YouTube"><i class="ri-youtube-fill"></i></a>
+                            <a href="https://www.pinterest.com/historiascouthn/" target="_blank" rel="noopener noreferrer" class="footer-social-btn pinterest" title="Pinterest"><i class="ri-pinterest-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna 2: Enlaces Rápidos -->
+                <div class="col-lg-2 col-md-6">
+                    <h4 class="footer-widget-title">Navegación</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#inicio"><i class="ri-arrow-right-s-line"></i> Inicio</a></li>
+                        <li><a href="#sobre"><i class="ri-arrow-right-s-line"></i> El Proyecto</a></li>
+                        <li><a href="#articulos"><i class="ri-arrow-right-s-line"></i> Artículos & Revista</a></li>
+                        <li><a href="#accion"><i class="ri-arrow-right-s-line"></i> En Acción</a></li>
+                        <li><a href="#linea-tiempo"><i class="ri-arrow-right-s-line"></i> Cronología</a></li>
+                        <li><a href="#videos"><i class="ri-arrow-right-s-line"></i> Audiovisual</a></li>
+                        <li><a href="#galeria"><i class="ri-arrow-right-s-line"></i> Memorias</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Hitos Históricos -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-widget-title">Hitos Scouts</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#linea-tiempo"><i class="ri-flag-line"></i> 1921: Primer Grupo en La Lima</a></li>
+                        <li><a href="#linea-tiempo"><i class="ri-fire-line"></i> 1923: Incendio de Tegucigalpa</a></li>
+                        <li><a href="#linea-tiempo"><i class="ri-global-line"></i> 1957: Reconocimiento OMMS</a></li>
+                        <li><a href="#linea-tiempo"><i class="ri-government-line"></i> 1960: Decreto Ley Protector</a></li>
+                        <li><a href="#linea-tiempo"><i class="ri-award-line"></i> 2022: Declaratoria Benemérita</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 4: Participación -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-widget-title">Participación</h4>
+                    <p class="small text-secondary mb-3">
+                        ¿Tienes material de tu patrulla o fotografías antiguas? Únete al rescate documental:
+                    </p>
+                    <a href="https://forms.gle/eAm35mK9SWiV7BKs5" target="_blank" rel="noopener noreferrer" class="btn-prixima-gold w-100 justify-content-center mb-3">
+                        <i class="ri-quill-pen-line"></i> Formulario Digital ↗
+                    </a>
+                    <p class="small text-muted mb-0">
+                        <i class="ri-mail-line text-warning"></i> historiascouthn@gmail.com
+                    </p>
+                </div>
+            </div>
+
+            <!-- Barra Inferior de Copyright -->
+            <div class="footer-bottom-bar text-center">
+                <p class="mb-0">
+                    © <span id="currentYear">2026</span> <strong>Historias Scouts de Honduras</strong>. Todos los derechos reservados. Preservando con honor la llama del Escultismo Benemérito.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =========================================================================
+         LIGHTBOX MODAL PERSONALIZADO CON NAVEGACIÓN (PRIXIMA PHOTO VIEWER)
+         ========================================================================= -->
+    <div id="scoutLightbox" class="scout-lightbox" role="dialog" aria-modal="true" aria-label="Visualizador de Fotografía">
+        <!-- Botón Cerrar -->
+        <button id="lightboxClose" class="lightbox-close-btn" type="button" aria-label="Cerrar visualizador">&times;</button>
+
+        <!-- Botones de Navegación Anterior / Siguiente -->
+        <button id="lightboxPrev" class="lightbox-nav-btn prev" type="button" aria-label="Fotografía anterior">
+            <i class="ri-arrow-left-s-line"></i>
+        </button>
+        <button id="lightboxNext" class="lightbox-nav-btn next" type="button" aria-label="Fotografía siguiente">
+            <i class="ri-arrow-right-s-line"></i>
+        </button>
+
+        <div class="lightbox-content">
+            <div class="lightbox-top-meta">
+                <span id="lightboxTag" class="lightbox-tag-pill">Memoria Scout</span>
+                <span id="lightboxCounter" class="lightbox-counter-badge">1 / 15</span>
+            </div>
+            <div class="lightbox-image-container">
+                <img id="lightboxImg" src="" alt="Ampliación de fotografía scout">
+            </div>
+            <div id="lightboxCaption" class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- Botón Volver Arriba -->
+    <button class="btn-back-to-top" type="button" aria-label="Volver arriba">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+
+    <!-- Bootstrap 5 Bundle JS (incluye Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script de Interactividad Dinámica -->
+    <script src="js/script.js"></script>
+</body>
+</html>
